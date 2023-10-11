@@ -32,12 +32,13 @@ RectTransform:
   - {fileID: 2738205047874772779}
   - {fileID: 7745502666594006055}
   - {fileID: 8454183035697754715}
+  - {fileID: 909668302}
   m_Father: {fileID: 4970730458097467864}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: 7}
+  m_AnchoredPosition: {x: 14.985962, y: -23.399963}
   m_SizeDelta: {x: -114.06665, y: -107.490845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &681954760
@@ -77,6 +78,84 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &909668301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909668302}
+  - component: {fileID: 909668304}
+  - component: {fileID: 909668303}
+  m_Layer: 5
+  m_Name: Game Over
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &909668302
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909668301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 681954758}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.88, y: 49.1}
+  m_SizeDelta: {x: 517.3321, y: 113.18597}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &909668304
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909668301}
+  m_CullTransparentMesh: 0
+--- !u!114 &909668303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909668301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 96
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Game Over
 --- !u!1 &1243042382894681389
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,8 +582,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -274.16, y: 176.49}
-  m_SizeDelta: {x: -608.261, y: -382.2109}
+  m_AnchoredPosition: {x: -299.74, y: 171.52}
+  m_SizeDelta: {x: -665.45215, y: -384.06375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4970730456927956069
 CanvasRenderer:
@@ -632,8 +711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.001159668, y: -16.244995}
-  m_SizeDelta: {x: 49.37828, y: -32.490833}
+  m_AnchoredPosition: {x: 0, y: -32.699997}
+  m_SizeDelta: {x: 49.380676, y: 3.5904236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4970730457250358955
 CanvasRenderer:
@@ -724,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11.601013}
-  m_SizeDelta: {x: 49.38069, y: -23.202919}
+  m_AnchoredPosition: {x: 0, y: -9.917786}
+  m_SizeDelta: {x: 49.38066, y: 19.834747}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4970730457476027829
 CanvasRenderer:
@@ -961,6 +1040,7 @@ GameObject:
   - component: {fileID: 6353318920935482516}
   - component: {fileID: 6686040597089075351}
   - component: {fileID: 3699002534663776719}
+  - component: {fileID: 2107499709}
   m_Layer: 5
   m_Name: To Title Screen
   m_TagString: Untagged
@@ -1067,7 +1147,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6686040597089075351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2107499709}
+        m_MethodName: loadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StartingScene
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2107499709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366818644010810046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28103a5e37bc8cf40afb2a30d8827d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5857758242174780756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,12 +1534,12 @@ GameObject:
   - component: {fileID: 2545877091154116281}
   - component: {fileID: 7699473202961757410}
   m_Layer: 5
-  m_Name: Game Over
+  m_Name: Congratulations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2738205047874772779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1453,8 +1556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 49.1}
-  m_SizeDelta: {x: 377.65558, y: 113.18597}
+  m_AnchoredPosition: {x: 1.88, y: 49.1}
+  m_SizeDelta: {x: 517.3321, y: 113.18597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2545877091154116281
 CanvasRenderer:
@@ -1496,7 +1599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Over
+  m_Text: Congratulations
 --- !u!1 &8213059463560693219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -48.4, y: 176.49}
+  m_AnchoredPosition: {x: -89, y: 172.45}
   m_SizeDelta: {x: -650.0247, y: -382.2109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3689505719364245375
