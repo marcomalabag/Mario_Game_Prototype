@@ -463,7 +463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 572403286}
   speed: 20
-  JumpForce: 0
+  JumpForce: 10
 --- !u!50 &572403286 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 9180981723438478814, guid: c636e95bb593f2247a6879b2d0195071,

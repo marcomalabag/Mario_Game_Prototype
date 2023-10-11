@@ -11,6 +11,9 @@ public class MovementStateMachine : StateMachine
     [HideInInspector]
     public WalkingState walk;
 
+    [HideInInspector]
+    public JumpingState jump;
+
     public Rigidbody2D rb;
 
     public float speed;
@@ -21,6 +24,7 @@ public class MovementStateMachine : StateMachine
     {
         idle = new IdleState(this);
         walk = new WalkingState(this);
+        jump = new JumpingState(this);
     }
 
     protected override BaseState GetInitialState()

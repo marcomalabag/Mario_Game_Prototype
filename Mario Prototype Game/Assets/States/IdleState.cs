@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class IdleState : BaseState  
@@ -26,6 +27,12 @@ public class IdleState : BaseState
         {
             machineState.ChangeState(sm.walk);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            machineState.ChangeState(sm.jump);
+        }
+            
     }
 
 
