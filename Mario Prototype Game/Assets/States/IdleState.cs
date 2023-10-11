@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 
-public class IdleState : BaseState  
+public class IdleState : BaseState
 {
     private float HorizontalInput;
     protected MovementStateMachine sm;
 
-    public IdleState(MovementStateMachine MovementSM): base("Idle", MovementSM)
+    public IdleState(MovementStateMachine MovementSM) : base("Idle", MovementSM)
     {
         sm = (MovementStateMachine)this.Machine;
     }
@@ -23,7 +23,7 @@ public class IdleState : BaseState
     {
         base.UpdateLogic();
         HorizontalInput = Input.GetAxis("Horizontal");
-        if(Mathf.Abs(HorizontalInput) > Mathf.Epsilon)
+        if (Mathf.Abs(HorizontalInput) > Mathf.Epsilon)
         {
             machineState.ChangeState(sm.walk);
         }
@@ -32,12 +32,13 @@ public class IdleState : BaseState
         {
             machineState.ChangeState(sm.jump);
         }
-            
+
     }
 
 
 
-    public override void Exit() { 
+    public override void Exit()
+    {
         base.Exit();
     }
 }
