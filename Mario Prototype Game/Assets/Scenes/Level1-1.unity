@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 572403286}
-  speed: 20
-  JumpForce: 10
+  speed: 10
+  JumpForce: 5
 --- !u!50 &572403286 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 9180981723438478814, guid: c636e95bb593f2247a6879b2d0195071,
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 1367577890}
   - component: {fileID: 1367577893}
   - component: {fileID: 1367577892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

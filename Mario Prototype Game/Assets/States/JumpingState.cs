@@ -9,7 +9,7 @@ public class JumpingState : BaseState
     protected MovementStateMachine sm;
 
     private bool onGround;
-    private int GroundLayer = 1 << 6;
+    private int GroundLayer = 1 << 8;
 
     public JumpingState(MovementStateMachine MovementSM): base("Jumping", MovementSM)
     {
@@ -32,8 +32,12 @@ public class JumpingState : BaseState
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();
+
+
         onGround = sm.rb.velocity.y < Mathf.Epsilon && sm.rb.IsTouchingLayers(GroundLayer);
     }
+
+    
    
 
 
