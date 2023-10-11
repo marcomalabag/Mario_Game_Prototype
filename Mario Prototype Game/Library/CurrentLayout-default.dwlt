@@ -290,11 +290,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\source\repos\Mario_Game_Prototype\Mario Prototype
     Game
@@ -302,9 +302,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c480000
-    m_LastClickedID: 18572
-    m_ExpandedIDs: 000000008c48000000ca9a3b
+    m_SelectedIDs: 48390000
+    m_LastClickedID: 14664
+    m_ExpandedIDs: 000000004039000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -332,7 +332,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000040390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000643b00004a3b0000b26800008a3c000068400000503d00001c5b00008a3d00008e3d0000a0720000e83c0000804d00003a4b0000b23c00008e3c0000863c0000c47c0000c07c0000bc7c000062480000b64000000a3d0000146800001c680000083d000002700000003d00004a3f0000bc3e0000003f0000804700001a3f0000fc4800000e49000024510000f43d00007047000028550000d248000088470000845000002c520000f6430000c45200001c6a000080460000ac460000aa4c0000ae4c0000d04c00008e3e000070950000b06b0000405f00007a280100fc370000e4390000e0400000703c0000783c0000705300009e8800006251000064510000783800002e3a0000b43d00004a3a000042460000b65200000e60000000000000123d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 50390000
       m_LastClickedID: 0
-      m_ExpandedIDs: ecfaffff
+      m_ExpandedIDs: 62fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
