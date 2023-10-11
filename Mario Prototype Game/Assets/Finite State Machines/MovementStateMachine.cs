@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovementStateMachine : StateMachine
 {
@@ -10,6 +11,9 @@ public class MovementStateMachine : StateMachine
 
     [HideInInspector]
     public WalkingState walk;
+
+    [HideInInspector]
+    public JumpingState jump;
 
     public Rigidbody2D rb;
 
@@ -21,6 +25,7 @@ public class MovementStateMachine : StateMachine
     {
         idle = new IdleState(this);
         walk = new WalkingState(this);
+        jump = new JumpingState(this);
     }
 
     protected override BaseState GetInitialState()
