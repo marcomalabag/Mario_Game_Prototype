@@ -19,6 +19,7 @@ public class OpenScene : MonoBehaviour
 
     public void loadScene(string name)
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene(name);
     }
 }

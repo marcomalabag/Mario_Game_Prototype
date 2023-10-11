@@ -18,12 +18,13 @@ public class GameCleared : MonoBehaviour
         
     }
 
-    private void onTriggerEnter2D(Collider2D collider)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if(collider.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
             ObjectiveCleared.Raise();
             Time.timeScale = 0f;
         }
     }
+    
 }
