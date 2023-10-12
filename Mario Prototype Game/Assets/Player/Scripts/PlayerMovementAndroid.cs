@@ -93,6 +93,7 @@ public class PlayerMovementAndroid : MonoBehaviour
         else if (Jump)
         {
             this.walkDistance = Time.deltaTime * jumpForce;
+            
         }
 
         else

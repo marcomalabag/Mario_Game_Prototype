@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9987c8e0d261b7c429e6e5c94a69d7ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 500
   walkDistance: 0
   rb: {fileID: 9180981723438478814}
+  jumpForce: 1000
