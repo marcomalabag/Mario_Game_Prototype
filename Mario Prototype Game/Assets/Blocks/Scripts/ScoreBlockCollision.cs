@@ -10,6 +10,9 @@ public class ScoreBlockCollision : MonoBehaviour
 
     [SerializeField]
     private int points;
+
+    [SerializeField]
+    private int BlockCounter;
     void Start()
     {
         
@@ -23,7 +26,10 @@ public class ScoreBlockCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Player Scores");
-        score.AddScore(points);
+        if(col.gameObject.name == "Player" && BlockCounter > 0)
+        {
+            score.AddScore(points);
+            BlockCounter--;
+        }
     }
 }

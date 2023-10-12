@@ -21,6 +21,8 @@ public class MovementStateMachine : StateMachine
 
     public float JumpForce;
 
+    public float JumpDrag;
+
     private void Awake()
     {
         idle = new IdleState(this);

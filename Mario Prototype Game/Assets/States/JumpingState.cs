@@ -19,6 +19,7 @@ public class JumpingState : BaseState
         base.Enter();
         Vector2 vel = sm.rb.velocity;
         vel.y += sm.JumpForce;
+        vel.x += sm.JumpDrag;
         sm.rb.velocity = vel;
     }
 
