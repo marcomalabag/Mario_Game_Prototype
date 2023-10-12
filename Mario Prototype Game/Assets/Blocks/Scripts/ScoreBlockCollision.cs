@@ -13,6 +13,9 @@ public class ScoreBlockCollision : MonoBehaviour
 
     [SerializeField]
     private int BlockCounter;
+
+    [SerializeField]
+    private SpriteRenderer sr; 
     void Start()
     {
         
@@ -24,12 +27,22 @@ public class ScoreBlockCollision : MonoBehaviour
         
     }
 
+    public void ChangeScoreBlock()
+    {
+        if(BlockCounter == 0)
+        {
+            this.sr.color = new Color(165, 42, 42);
+        }
+        
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.name == "Player" && BlockCounter > 0)
         {
             score.AddScore(points);
             BlockCounter--;
+            ChangeScoreBlock();
         }
     }
 }

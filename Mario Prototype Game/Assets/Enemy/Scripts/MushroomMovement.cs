@@ -15,9 +15,6 @@ public class MushroomMovement : Enemy
     private Transform Bposition;
 
     [SerializeField]
-    private float duration;
-
-    [SerializeField]
     private float moveSpeed;
 
     private float elapsedTime = 0.0f;
@@ -48,7 +45,15 @@ public class MushroomMovement : Enemy
 
     public void swap()
     {
-        
+        if (transform.position != Bposition.position)
+        {
+            return;
+        }
+
+        Transform temp = Aposition;
+        Aposition = Bposition;
+        Bposition = temp;
+        elapsedTime = 0;
 
     }
 
