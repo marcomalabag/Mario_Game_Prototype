@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1372033073}
   - component: {fileID: 1372033075}
   - component: {fileID: 1372033074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platformhitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8870644767782384330}
   - component: {fileID: 5931350039063938357}
   - component: {fileID: 5931350039063938358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScoreBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

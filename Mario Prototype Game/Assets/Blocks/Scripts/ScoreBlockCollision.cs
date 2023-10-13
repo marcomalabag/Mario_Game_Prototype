@@ -40,9 +40,9 @@ public class ScoreBlockCollision : MonoBehaviour
     {
         if(col.gameObject.name == "Player" && BlockCounter > 0)
         {
-            score.AddScore(points);
+            score.AddScore(points); // Score is a scriptable game object
             BlockCounter--;
-            ChangeScoreBlock();
+            ChangeScoreBlock(); 
         }
     }
 }

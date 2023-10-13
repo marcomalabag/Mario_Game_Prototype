@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovementAndroid : MonoBehaviour
 {
+    /* Also uses states but relies on Event Trigger pointer.
+     This is for utilizing UI buttons for the phone*/
+
     [SerializeField]
     private float speed;
 
@@ -31,11 +34,12 @@ public class PlayerMovementAndroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        movement();
+        movement(); // Computes for the walkdistance value based on the state
     }
 
     private void FixedUpdate()
     {
+        //Does the actual physics given the state and the value of the walkdistance
         if (!this.Jump)
         {
             this.rb.velocity = new Vector2(this.walkDistance, this.rb.velocity.y);

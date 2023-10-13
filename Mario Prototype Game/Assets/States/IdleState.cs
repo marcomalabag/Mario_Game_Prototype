@@ -27,7 +27,7 @@ public class IdleState : BaseState
             machineState.ChangeState(sm.walk);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             machineState.ChangeState(sm.jump);
         }

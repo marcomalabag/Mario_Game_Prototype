@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Source: https://awesometuts.com/blog/support-mobile-screen-sizes-unity/
+
+
+
 [ExecuteInEditMode]
 [RequireComponent(typeof(Camera))]
 public class CameraViewportHandler : MonoBehaviour

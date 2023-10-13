@@ -10,7 +10,7 @@ public class GameEventListener : MonoBehaviour, IGameEventListener
     [SerializeField]
     private UnityEvent response;
 
-    private void OnEnable()
+    private void OnEnable()  
     {
         gameEvent.RegisterListener(this);
     }
