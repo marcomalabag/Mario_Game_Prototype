@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine;
 using System.Collections;
 
+// Source: https://awesometuts.com/blog/support-mobile-screen-sizes-unity/
+
 [ExecuteInEditMode]
 public class AnchorGameObject : MonoBehaviour
 {

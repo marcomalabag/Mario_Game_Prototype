@@ -26,8 +26,8 @@ public class BaseState
     }
 
 
-    public virtual void Enter() { }
-    public virtual void UpdateLogic() { }
-    public virtual void UpdatePhysics() { }
-    public virtual void Exit() { }
+    public virtual void Enter() { } // Logic for when the state is entered in. What variables have to initialized
+    public virtual void UpdateLogic() { } // Logic for when to transition to another state
+    public virtual void UpdatePhysics() { } // Logic for what to do in this state or what to check
+    public virtual void Exit() { } // What logic has to be done or what variables have to be deinitialized
 }

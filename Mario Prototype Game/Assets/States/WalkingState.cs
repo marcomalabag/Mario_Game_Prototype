@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class WalkingState : BaseState
 {
     private float HorizontalInput;
@@ -23,11 +24,13 @@ public class WalkingState : BaseState
         base.UpdateLogic();
         HorizontalInput = Input.GetAxis("Horizontal");
         
+        
         if (Mathf.Abs(HorizontalInput) < Mathf.Epsilon)
         {
             machineState.ChangeState(sm.idle);
         }
-    }
+        
+     }
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();

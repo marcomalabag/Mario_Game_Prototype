@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+FSM was implemented since Mario has different states.
+His movement is either walking, idle or jumping. But in 
+case more movement features are to be implemented then 
+adding a new movement feature can be done in an organized way.
+*/
+
+
 public class MovementStateMachine : StateMachine
 {
     // Start is called before the first frame update
